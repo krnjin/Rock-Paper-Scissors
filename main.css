@@ -1,0 +1,9 @@
+.heading {
+    text-align: center;
+    font-size: 48px;
+    background-color: gray;
+}
+
+.heading:hover{
+    background-color: white;
+}
