@@ -11,12 +11,16 @@
 <body>
     <div class ="heading">
         Welcome to Rock Paper Scissors Game!
+        <br>
+        <div class = "by">
+            By: Jin Kwon E-mail: kwon741@hotmail.com
+        </div>
     </div>
     
     <h1>Please pick one of the following:
-        <button id="rock" onclick="resultRock()">ROCK</button>
-        <button id="paper" onclick="resultPaper()">PAPER</button>
-        <button id="scissors" onclick="resultScissors()">SCISSORS</button>
+        <button id="rock" onclick="gameRock()">ROCK</button>
+        <button id="paper" onclick="gamePaper()">PAPER</button>
+        <button id="scissors" onclick="gameScissors()">SCISSORS</button>
     </h1>
 
     <hr>
@@ -25,18 +29,31 @@
         <div class ="column">
             <h2>Computer</h2>
             <img src="/computer.jpeg" height="100px">
+            <br>
+            <span id="compResult"></span>
         </div>
 
         <div class ="column">
             <h2>You</h2>
             <img src="/smile.png" height="100px">
+            <br>
+            <span id="youResult"></span>
+            
         </div>
 
         <div class ="column">
             <h2>Score</h2>
             <br>
+            Computer : You
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="computer">0</span> : <span id="you">0</span>
+            <br>
         </div>
     </div>
+    <div id="btn">
+        <button type="button" id="reset" onclick="reset()">RESET</button>
+    </div>
+    
 
-</body>
+    </body>
 </html>

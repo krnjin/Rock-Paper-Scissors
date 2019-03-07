@@ -34,3 +34,45 @@ button:hover {
     float: left;
     width: 33.33%;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#compResult {
+    font-size: 40px;
+}
+
+#youResult {
+    font-size: 40px;
+}
+
+#btn {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    position: absolute;
+}
+
+#reset{
+    color: white;
+    font-size: 50px;
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+#reset:hover {
+    opacity: 1;
+}
+
+.by {
+    font-size: 15px;
+}
